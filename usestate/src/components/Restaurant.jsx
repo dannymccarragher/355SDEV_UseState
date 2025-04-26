@@ -8,6 +8,10 @@ function Restaurant(props) {
     setMenu(prev => !prev);
   }
 
+  const handleHours = () => {
+    setHours(prev => !prev);
+  }
+
   return (
     <div className="restaurant">
       <img src={props.restaurant.image} alt={props.name} />

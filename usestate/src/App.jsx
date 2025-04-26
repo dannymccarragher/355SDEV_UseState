@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function App() {
 
-  const [restaurantState, setRestaurants] = useState();
+  const [restaurantState, setRestaurants] = useState([...data]);
   return (
     <div className="App">
       <RestaurantsContainer restaurants={restaurantState} />

@@ -1,4 +1,13 @@
+import { useState } from "react";
+
 function Restaurant(props) {
+  const [hours, setHours] = useState(false);
+  const [menu, setMenu] = useState(false);
+
+  const handleMenu = () => {
+    setMenu(prev => !prev);
+  }
+
   return (
     <div className="restaurant">
       <img src={props.restaurant.image} alt={props.name} />
